@@ -9,7 +9,11 @@
 import Cocoa
 
 class DetailViewController: NSViewController {
-
+    
+    //    MARK: Outlets:
+    @IBOutlet var ImageView: NSImageView!
+    
+    //    MARK: Start here:
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
