@@ -18,5 +18,9 @@ class DetailViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
     }
-    
+
+    //    MARK: Methods:
+    func imageSelected(name: String) {
+        ImageView.image = NSImage(named: name)
+    }
 }
