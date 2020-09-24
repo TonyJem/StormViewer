@@ -115,14 +115,30 @@
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
                         <value key="minSize" type="size" width="480" height="270"/>
-                        <toolbar key="toolbar" implicitIdentifier="342427D4-4AD2-407C-BC00-4B676612B92C" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="rRy-CW-Lx0">
+                        <toolbar key="toolbar" implicitIdentifier="AB8C3C22-C0F3-4809-9FD6-6EF272A27ECD" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="hgf-m9-QiC">
                             <allowedToolbarItems>
-                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="Dr0-uQ-18T"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="5Aj-KQ-XEw"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="g6p-UE-33n"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="bAw-bw-Fpg"/>
+                                <toolbarItem implicitItemIdentifier="71615CF1-D5C8-45A1-B781-D2DCB60C9DC2" label="" paletteLabel="" image="NSShareTemplate" id="7Ci-kT-lhO">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="47" height="27"/>
+                                    <size key="maxSize" width="47" height="27"/>
+                                    <button key="view" verticalHuggingPriority="750" id="vH2-a6-DIb">
+                                        <rect key="frame" x="0.0" y="14" width="128" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSShareTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FJB-A4-Dsc">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="sharedClicked:" target="Oky-zY-oP4" id="Az6-fc-TkR"/>
+                                        </connections>
+                                    </button>
+                                </toolbarItem>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
-                                <toolbarItem reference="Dr0-uQ-18T"/>
-                                <toolbarItem reference="5Aj-KQ-XEw"/>
+                                <toolbarItem reference="bAw-bw-Fpg"/>
+                                <toolbarItem reference="7Ci-kT-lhO"/>
                             </defaultToolbarItems>
                         </toolbar>
                         <connections>
@@ -137,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="289"/>
         </scene>
-        <!--Split View Controller-->
+        <!--View Controller-->
         <scene sceneID="jsH-OJ-bl8">
             <objects>
-                <splitViewController id="p9E-yq-Rnr" sceneMemberID="viewController">
+                <splitViewController id="p9E-yq-Rnr" customClass="ViewController" customModule="StormViewer" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem holdingPriority="260" id="d2p-eY-6II"/>
                         <splitViewItem id="MX0-E2-Jpl"/>
@@ -285,4 +301,7 @@
             <point key="canvasLocation" x="761" y="831"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSShareTemplate" width="11" height="16"/>
+    </resources>
 </document>
