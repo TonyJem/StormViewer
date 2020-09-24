@@ -115,6 +115,16 @@
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
                         <value key="minSize" type="size" width="480" height="270"/>
+                        <toolbar key="toolbar" implicitIdentifier="342427D4-4AD2-407C-BC00-4B676612B92C" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="rRy-CW-Lx0">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="Dr0-uQ-18T"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="5Aj-KQ-XEw"/>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="Dr0-uQ-18T"/>
+                                <toolbarItem reference="5Aj-KQ-XEw"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
