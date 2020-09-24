@@ -121,8 +121,8 @@
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="bAw-bw-Fpg"/>
                                 <toolbarItem implicitItemIdentifier="71615CF1-D5C8-45A1-B781-D2DCB60C9DC2" label="" paletteLabel="" image="NSShareTemplate" id="7Ci-kT-lhO">
                                     <nil key="toolTip"/>
-                                    <size key="minSize" width="47" height="27"/>
-                                    <size key="maxSize" width="47" height="27"/>
+                                    <size key="minSize" width="47" height="32"/>
+                                    <size key="maxSize" width="47" height="32"/>
                                     <button key="view" verticalHuggingPriority="750" id="vH2-a6-DIb">
                                         <rect key="frame" x="0.0" y="14" width="128" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -135,10 +135,27 @@
                                         </connections>
                                     </button>
                                 </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="9A11F2F0-8B1F-4E4F-B00E-04AC95158D93" label="" paletteLabel="" image="NSAddTemplate" id="Zhf-Iz-Vq6">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="47" height="32"/>
+                                    <size key="maxSize" width="47" height="32"/>
+                                    <button key="view" verticalHuggingPriority="750" id="tEk-PS-7SS">
+                                        <rect key="frame" x="0.0" y="14" width="82" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSAddTemplate" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ktL-gL-YQo">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="plusButtonClicked:" target="Oky-zY-oP4" id="VQP-BR-qwn"/>
+                                        </connections>
+                                    </button>
+                                </toolbarItem>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
                                 <toolbarItem reference="bAw-bw-Fpg"/>
                                 <toolbarItem reference="7Ci-kT-lhO"/>
+                                <toolbarItem reference="Zhf-Iz-Vq6"/>
                             </defaultToolbarItems>
                         </toolbar>
                         <connections>
@@ -302,6 +319,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
         <image name="NSShareTemplate" width="11" height="16"/>
     </resources>
 </document>

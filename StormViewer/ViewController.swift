@@ -23,6 +23,11 @@ class ViewController: NSSplitViewController {
         picker.show(relativeTo: .zero, of: sender, preferredEdge: .minY)
     }
 
+    @IBAction func plusButtonClicked(_ sender: NSView){
+        runAlert()
+    }
+    
+    
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
@@ -30,5 +35,11 @@ class ViewController: NSSplitViewController {
     }
 
 
+    func runAlert() {
+        let alert = NSAlert()
+        alert.messageText = "Attention!!!"
+        alert.informativeText = "Plus Button was clicked :)"
+        alert.runModal()
+    }
 }
 
